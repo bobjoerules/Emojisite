@@ -7,6 +7,129 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
+      .facebutton {
+        background-color: yellow;
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .hatbutton {
+        background-color: brown;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .glassesbutton {
+        background-color: black;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+
+      .redbutton {
+        background-color: red;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .orangebutton {
+        background-color: orange;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .yellowbutton {
+        background-color: yellow;
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .greenbutton {
+        background-color: green;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .bluebutton {
+        background-color: blue;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .pinkbutton {
+        background-color: pink;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .purplebutton {
+        background-color: purple;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .brownbutton {
+        background-color: brown;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .blackbutton {
+        background-color: black;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .whitebutton {
+        background-color: white;
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+
+
+
       .hat {
         position: absolute;
         left: 100px;
@@ -35,27 +158,47 @@
     <img id="glasses" class="glasses" src="glasses.png">
 
     </div>
-    <p>Face: <button onclick="document.getElementById('face').src='Happy face.png'">Happy Face</button>
+    <div style="background-color:white;">Face: 
 
-    <button onclick="document.getElementById('face').src='frown face.png'">Sad Face</button></p>  
+    <button class="facebutton" onclick="document.getElementById('face').src='Happy face.png'">Happy Face</button>
 
-    <p> Hat: <button onclick="document.getElementById('hat').src='hat.png'">Cowboy Hat</button>
+    <button class="facebutton" onclick="document.getElementById('face').src='frown face.png'">Sad Face</button></div>  
 
-    <button onclick="document.getElementById('hat').src='nothing.png'">No Hat</button></p>
+    <div style="background-color:white;"> Hat: 
+      
+    <button class="hatbutton" onclick="document.getElementById('hat').src='hat.png'">Cowboy Hat</button>
 
-    <p>Glasses: <button onclick="document.getElementById('glasses').src='glasses.png'">Glasses</button>
+    <button class="hatbutton" onclick="document.getElementById('hat').src='nothing.png'">No Hat</button></div>
 
-    <button onclick="document.getElementById('glasses').src='nothing.png'">No Glasses</button></p>
+    <div style="background-color:white;">Glasses: 
+      
+    <button class="glassesbutton" onclick="document.getElementById('glasses').src='glasses.png'">Glasses</button>
+
+    <button class="glassesbutton" onclick="document.getElementById('glasses').src='nothing.png'">No Glasses</button></div>
     
-    <button onclick="document.body.style.backgroundColor= 'red'">red</button> 
+    <div style="background-color:white;">Background color: 
+      
+    
+    <button class="redbutton" onclick="document.body.style.backgroundColor= 'red'">red</button> 
 
-    <button onclick="document.body.style.backgroundColor= 'orange'">orange</button> 
+    <button class="orangebutton" onclick="document.body.style.backgroundColor= 'orange'">orange</button> 
 
-    <button onclick="document.body.style.backgroundColor= 'green'">green</button>
+    <button class="yellowbutton" onclick="document.body.style.backgroundColor= 'yellow'">yellow</button> 
 
+    <button class="greenbutton" onclick="document.body.style.backgroundColor= 'green'">green</button>
+    
+    <button class="bluebutton" onclick="document.body.style.backgroundColor= 'blue'">blue</button>
+        
+   <button class="pinkbutton" onclick="document.body.style.backgroundColor= 'pink'">pink</button>
+            
+   <button class="purplebutton" onclick="document.body.style.backgroundColor= 'purple'">purple</button>
 
- 
+   <button class="brownbutton" onclick="document.body.style.backgroundColor= 'brown'">brown</button>
 
+    <button class="blackbutton" onclick="document.body.style.backgroundColor= 'black'">black</button>
+
+   <button class="whitebutton" onclick="document.body.style.backgroundColor= 'white'">white</button>      
+   </div>   
     <script src="script.js"></script>
   </body>
 </html>
