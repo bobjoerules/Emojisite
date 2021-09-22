@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>test</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .hat {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 2;
+      }
+      .face {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 1;
+      }
+      .glasses {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 1;
+      }
+    </style>  
+  </head>
+  <body>
+    <div>
+
+    <img id="hat" class="hat" src="hat.png">
+    <img id="face" class="face" src="Happy face.png">
+    <img id="glasses" class="glasses" src="glasses.png">
+
+    </div>
+     <button onclick="document.getElementById('face').src='Happy face.png'">Happy Face</button>
+
+    <button onclick="document.getElementById('face').src='frown face.png'">Sad Face</button>  
+
+    <button onclick="document.getElementById('hat').src='hat.png'">Cowboy Hat</button>
+
+    <button onclick="document.getElementById('hat').src='nothing.png'">No Hat</button>
+
+    <button onclick="document.getElementById('glasses').src='glasses.png'">Glasses</button>
+
+    <button onclick="document.getElementById('glasses').src='nothing.png'">No Glasses</button>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
