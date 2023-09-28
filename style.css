@@ -27,19 +27,16 @@
       }
       .hat {
         position: absolute;
-        left: 100px;
-        top: 100px;
+        left: 50%;
         z-index: 2;
       }
       .face {
         position: absolute;
-        left: 100px;
-        top: 100px;
-        z-index: 1;
+      left: 50%;
+        z-index: 0;
       }
       .glasses {
         position: absolute;
-        left: 100px;
-        top: 100px;
+            left: 50%;
         z-index: 1;
       }
