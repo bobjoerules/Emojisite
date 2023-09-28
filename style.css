@@ -32,7 +32,6 @@ margin-right: auto;
 left: 0;
 right: 0;
 text-align: center;
-        left: 50%;
         z-index: 2;
       }
       .face {
@@ -42,7 +41,6 @@ margin-right: auto;
 left: 0;
 right: 0;
 text-align: center;
-      left: 50%;
         z-index: 0;
       }
       .glasses {
@@ -52,6 +50,5 @@ margin-right: auto;
 left: 0;
 right: 0;
 text-align: center;
-            left: 50%;
         z-index: 1;
       }
