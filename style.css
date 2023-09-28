@@ -1,3 +1,10 @@
+.div {
+text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+}
       .facebutton {
         background-color: yellow;
         border: none;
