@@ -1,0 +1,45 @@
+      .facebutton {
+        background-color: yellow;
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .hatbutton {
+        background-color: brown;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .glassesbutton {
+        background-color: black;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .hat {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 2;
+      }
+      .face {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 1;
+      }
+      .glasses {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 1;
+      }
