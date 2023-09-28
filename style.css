@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 div {
+    font-family: 'Dosis', sans-serif;
+    color: white;
 text-shadow:
     3px 3px 0 #000,
     -3px 3px 0 #000,
