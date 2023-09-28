@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-div {
+div, p {
     font-family: 'Dosis', sans-serif;
     color: white;
 text-shadow:
