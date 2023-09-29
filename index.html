@@ -10,6 +10,37 @@
     </style>  
   </head>
   <body>
+    <div>Face: 
+
+      <button class="facebutton" onclick="document.getElementById('headware').src='images/Happy face.png'">Happy Face</button>
+  
+      <button class="facebutton" onclick="document.getElementById('headware').src='images/frown face.png'">Sad Face</button>
+      
+      <button class="facebutton" onclick="document.getElementById('headware').src='images/skull face.png'">Skull Face</button>
+  
+      <button class="facebutton" onclick="document.getElementById('headware').src='images/nerd face.png'">Nerd Face</button>
+      </div>  
+  
+      <div>Headware: 
+        
+      <button class="hatbutton" onclick="document.getElementById('hat').src='images/hat.png'">Cowboy Hat</button>
+  
+      <button class="hatbutton" onclick="document.getElementById('hat').src='images/top hat.png'">Top Hat</button>
+  
+      <button class="hatbutton" onclick="document.getElementById('hat').src='images/nothing.png'">None</button></div>
+  
+      <div>Accessories: 
+        
+      <button class="glassesbutton" onclick="document.getElementById('accessories').src='images/glasses.png'">Cool Shades</button>
+  
+      <button class="glassesbutton" onclick="document.getElementById('accessories').src='images/mask.png'">mask</button>
+  
+      <button class="glassesbutton" onclick="document.getElementById('accessories').src='images/nothing.png'">None</button></div>
+      
+      <div>Background color: 
+      
+      <input type="color" id="favcolor" name="favcolor" value="#ffffff">  
+     </div>   
     <div>
 
     <img id="hat" class="headware" src="images/nothing.png" draggable = "false">
@@ -17,37 +48,6 @@
     <img id="accessories" class="glasses" src="images/nothing.png" draggable = "false">
 
     </div>
-    <div>Face: 
-
-    <button class="facebutton" onclick="document.getElementById('headware').src='images/Happy face.png'">Happy Face</button>
-
-    <button class="facebutton" onclick="document.getElementById('headware').src='images/frown face.png'">Sad Face</button>
-    
-    <button class="facebutton" onclick="document.getElementById('headware').src='images/skull face.png'">Skull Face</button>
-
-    <button class="facebutton" onclick="document.getElementById('headware').src='images/nerd face.png'">Nerd Face</button>
-    </div>  
-
-    <div>Headware: 
-      
-    <button class="hatbutton" onclick="document.getElementById('hat').src='images/hat.png'">Cowboy Hat</button>
-
-    <button class="hatbutton" onclick="document.getElementById('hat').src='images/top hat.png'">Top Hat</button>
-
-    <button class="hatbutton" onclick="document.getElementById('hat').src='images/nothing.png'">None</button></div>
-
-    <div>Accessories: 
-      
-    <button class="glassesbutton" onclick="document.getElementById('accessories').src='images/glasses.png'">Cool Shades</button>
-
-    <button class="glassesbutton" onclick="document.getElementById('accessories').src='images/mask.png'">mask</button>
-
-    <button class="glassesbutton" onclick="document.getElementById('accessories').src='images/nothing.png'">None</button></div>
-    
-    <div>Background color: 
-    
-    <input type="color" id="favcolor" name="favcolor" value="#ffffff">  
-   </div>   
     <p style="position: absolute; bottom: 0; right: 0" draggable="false">© Bobjoerules 2023</p>
     <script src="script.js"></script>
   </body>
