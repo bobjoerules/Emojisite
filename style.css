@@ -1,64 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 div, p {
-    font-family: 'Dosis', sans-serif;
-    color: white;
-text-shadow:
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  text-shadow:
+  1px 1px 0 #000,
+  -1px 1px 0 #000,
+  -1px -1px 0 #000,
+  1px -1px 0 #000;
 }
-      .facebutton {
-        background-color: #ffc72b;
-        border: none;
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-      }
-      .hatbutton {
-        background-color: #a76b44;
-        border: none;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-      }
-      .glassesbutton {
-        background-color: black;
-        border: none;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-      }
-      .hat {
-        position: absolute;
-      margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
-        z-index: 2;
-      }
-      .face {
-        position: absolute;
-            margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
-        z-index: 0;
-      }
-      .glasses {
-        position: absolute;
-            margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
-        z-index: 1;
-      }
+.facebutton {
+  background-color: #ffc72b;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.hatbutton {
+  background-color: #a76b44;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.glassesbutton {
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.hat {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+.face {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 0;
+}
+.headware {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
