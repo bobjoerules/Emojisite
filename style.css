@@ -3,22 +3,10 @@ div, p {
   font-family: 'Dosis', sans-serif;
   color: white;
   text-shadow:
-  1px 1px 0 #000,
-  -1px 1px 0 #000,
-  -1px -1px 0 #000,
-  1px -1px 0 #000;
+  1px 1px 0 black;
 }
-.facebutton {
-  background-color: #ffc72b;
-  border: none;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-.hatbutton {
-  background-color: #a76b44;
+
+.mouthbutton {
   border: none;
   color: white;
   text-align: center;
@@ -26,8 +14,8 @@ div, p {
   display: inline-block;
   cursor: pointer;
 }
-.glassesbutton {
-  background-color: black;
+
+.righteyebutton {
   border: none;
   color: white;
   text-align: center;
@@ -35,7 +23,77 @@ div, p {
   display: inline-block;
   cursor: pointer;
 }
-.headware {
+
+.lefteyebutton {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.accessoriesbutton {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.highlightsbutton {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.settings{
+  position: absolute;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.settings:hover{
+  cursor:grabbing;
+}
+
+.glasses {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 5;
+}
+
+.accessories {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 5;
+}
+
+.leye {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+.reye {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -44,6 +102,27 @@ div, p {
   text-align: center;
   z-index: 2;
 }
+
+.mouth {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 4;
+}
+
+.highlights {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
 .face {
   position: absolute;
   margin-left: auto;
@@ -53,12 +132,17 @@ div, p {
   text-align: center;
   z-index: 0;
 }
-.accessories {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 1;
+
+button {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button:active{
+  background-color: black;
 }
