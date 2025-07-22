@@ -13,13 +13,12 @@ dragElement(document.getElementById("settings"));
 function dragElement(elmnt) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
-  // Mouse events
   elmnt.onmousedown = dragMouseDown;
-
-  // Touch events
   elmnt.ontouchstart = dragTouchStart;
 
   function dragMouseDown(e) {
+    if (["INPUT", "SELECT", "TEXTAREA", "BUTTON", "LABEL"].includes(e.target.tagName)) return;
+
     e.preventDefault();
     pos3 = e.clientX;
     pos4 = e.clientY;
@@ -38,6 +37,8 @@ function dragElement(elmnt) {
   }
 
   function dragTouchStart(e) {
+    if (["INPUT", "SELECT", "TEXTAREA", "BUTTON", "LABEL"].includes(e.target.tagName)) return;
+
     e.preventDefault();
     pos3 = e.touches[0].clientX;
     pos4 = e.touches[0].clientY;
