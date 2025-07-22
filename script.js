@@ -27,13 +27,25 @@ function dragElement(elmnt) {
   }
 
   function elementDragMouse(e) {
-    e.preventDefault();
+  e.preventDefault();
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
     pos3 = e.clientX;
     pos4 = e.clientY;
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+    let newTop = elmnt.offsetTop - pos2;
+    let newLeft = elmnt.offsetLeft - pos1;
+
+    const minTop = 0;
+    const minLeft = 0;
+    const maxTop = window.innerHeight - elmnt.offsetHeight;
+    const maxLeft = window.innerWidth - elmnt.offsetWidth;
+
+    newTop = Math.min(Math.max(newTop, minTop), maxTop);
+    newLeft = Math.min(Math.max(newLeft, minLeft), maxLeft);
+
+    elmnt.style.top = newTop + "px";
+    elmnt.style.left = newLeft + "px";
   }
 
   function dragTouchStart(e) {
@@ -52,8 +64,20 @@ function dragElement(elmnt) {
     pos2 = pos4 - e.touches[0].clientY;
     pos3 = e.touches[0].clientX;
     pos4 = e.touches[0].clientY;
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+    let newTop = elmnt.offsetTop - pos2;
+    let newLeft = elmnt.offsetLeft - pos1;
+
+    const minTop = 0;
+    const minLeft = 0;
+    const maxTop = window.innerHeight - elmnt.offsetHeight;
+    const maxLeft = window.innerWidth - elmnt.offsetWidth;
+
+    newTop = Math.min(Math.max(newTop, minTop), maxTop);
+    newLeft = Math.min(Math.max(newLeft, minLeft), maxLeft);
+
+    elmnt.style.top = newTop + "px";
+    elmnt.style.left = newLeft + "px";
   }
 
   function closeDragElement() {
