@@ -65,71 +65,58 @@ div, p {
 
 .glasses {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 5;
 }
 
+
 .accessories {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 5;
 }
 
 .leye {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
 }
 
 .reye {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
 .mouth {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 4;
 }
 
 .highlights {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .face {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
 
