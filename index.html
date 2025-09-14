@@ -16,83 +16,83 @@
     <div id="settings" class="settings">
     <div style="z-index: 100;">Mouth: 
         
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/Mouth/Grin Mouth.png'">Grin</button>
+      <button id="grinbtn" class="mouthbutton">Grin</button>
 
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/Mouth/Grinning Mouth.png'">Grinning</button>
+      <button id="griningbtn" class="mouthbutton">Grinning</button>
 
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/Mouth/Heart Smile.png'">Heart Smile</button>
+      <button id="heartsmilebtn" class="mouthbutton">Heart Smile</button>
 
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/Mouth/Large Smile.png'">Large Smile</button>
+      <button id="largesmilebtn" class="mouthbutton">Large Smile</button>
 
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/Mouth/Small Smile.png'">Small Smile</button>
+      <button id="smallsmilebtn" class="mouthbutton">Small Smile</button>
 
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/Mouth/Sunglasses Smile.png'">Sunglasses Smile</button>
+      <button id="sunglassessmilebtn" class="mouthbutton">Sunglasses Smile</button>
 
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/Mouth/Yum Mouth.png'">Yum</button>
+      <button id="yumbtn" class="mouthbutton">Yum</button>
 
-      <button class="mouthbutton" onclick="document.getElementById('mouth').src='images/nothing.png'">None</button>
+      <button id="nonemouthbtn" class="mouthbutton">None</button>
       
     </div>
 
     <div style="z-index: 100;">Right Eye: 
         
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Default R Eye.png'">Default</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Default R Eye.png'; enablemouthr()">Default</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Disappointed R Eye.png'">Disappointed</button>
+      <button style="background-color: red; opacity: 0.5; cursor: default;" disabled = true; id="disr" class="righteyebutton">Disappointed</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Grin R Eye.png'">Grin</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Grin R Eye.png'; enablemouthr()">Grin</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Heart R Eye.png'">Heart</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Heart R Eye.png'; enablemouthr()">Heart</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Joy R Eye.png'">Joy</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Joy R Eye.png'; enablemouthr()">Joy</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/ROFL R Eye.png'">ROFL</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/ROFL R Eye.png'; enablemouthr()">ROFL</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Smiley R Eye.png'">Smiley</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Smiley R Eye.png'; enablemouthr()">Smiley</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Wink R Eye.png'">Wink</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Wink R Eye.png'; enablemouthr()">Wink</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Yum R Eye.png'">Yum</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/Right Eyes/Yum R Eye.png'; enablemouthr()">Yum</button>
 
-      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/nothing.png'">None</button>
+      <button class="righteyebutton" onclick="document.getElementById('reye').src='images/nothing.png'; enablemouthr()">None</button>
       
     </div>
 
     <div style="z-index: 100;">Left Eye: 
         
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Default L Eye.png'">Default</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Default L Eye.png'; enablemouthl()">Default</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Disappointed L Eye.png'">Disappointed</button>
+      <button style="background-color: red; opacity: 0.5; cursor: default;" disabled = true; id="disl" class="lefteyebutton">Disappointed</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Grin L Eye.png'">Grin</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Grin L Eye.png'; enablemouthl()">Grin</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Heart L eye.png'">Heart</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Heart L eye.png'; enablemouthl()">Heart</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Joy L Eye.png'">Joy</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Joy L Eye.png'; enablemouthl()">Joy</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/ROFL L Eye.png'">ROFL</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/ROFL L Eye.png'; enablemouthl()">ROFL</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Smiley L Eye.png'">Smiley</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Smiley L Eye.png'; enablemouthl()">Smiley</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Wink L Eye.png'">Wink</button>
+      <button style="background-color: red; opacity: 0.5; cursor: default;" disabled = true; id="winkl" class="lefteyebutton">Wink</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Yum L Eye.png'">Yum</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/Left Eyes/Yum L Eye.png'; enablemouthl()">Yum</button>
 
-      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/nothing.png'">None</button>
+      <button class="lefteyebutton" onclick="document.getElementById('leye').src='images/nothing.png'; enablemouthl()">None</button>
       
     </div>
 
     <div style="z-index: 100;">Accessories: 
         
-      <button class="accessoriesbutton" onclick="document.getElementById('accessories').src='images/Face Accessories/Joy Tears.png'">Joy Tears</button>
+      <button id="joytearsbtn" class="accessoriesbutton">Joy Tears</button>
 
-      <button class="accessoriesbutton" onclick="document.getElementById('accessories').src='images/Face Accessories/ROFL Tears.png'">ROFL Tears</button>
+      <button id="ROFLtearsbtn" class="accessoriesbutton">ROFL Tears</button>
       
-      <button id="sunglassesbtn" class="accessoriesbutton" onclick="document.getElementById('glasses').src='images/Face Accessories/Sunglasses.png'">Sunglasses</button>
+      <button id="sunglassesbtn" class="accessoriesbutton">Sunglasses</button>
 
-      <button class="accessoriesbutton" onclick="document.getElementById('accessories').src='images/Face Accessories/Sweat.png'">Sweat</button>
+      <button id="sweat" class="accessoriesbutton">Sweat</button>
 
-      <button id="noaccess" class="accessoriesbutton" onclick="document.getElementById('accessories').src='images/nothing.png'; document.getElementById('glasses').src='images/nothing.png';">None</button>
+      <button id="noaccess" class="accessoriesbutton">None</button>
       
     </div>
 
@@ -103,7 +103,14 @@
       <button class="highlightsbutton" onclick="document.getElementById('highlights').src='images/nothing.png'">None</button>
       
     </div>
-  
+
+    <!--<div style="z-index: 100;">Right Hand: 
+
+    </div>
+
+    <div style="z-index: 100;">Left Hand: 
+
+    </div>-->
     <div>Background Color: 
     
       <input type="color" id="favcolor" name="favcolor" value="#005A78" style="padding: 0; border:none; cursor:pointer;">  
@@ -114,6 +121,9 @@
       Todo List:
       Randomize Button
       More Emojis
+        Right Hand
+        Left Hand
+      Settings Toggle
       -->
     <div>
       <img id="mouth" class="mouth" src="images/Mouth/Grin Mouth.png" draggable = "false">
