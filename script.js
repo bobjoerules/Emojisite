@@ -1,4 +1,17 @@
 const colorInput = document.getElementById("favcolor");
+const glassesbtn = document.getElementById("sunglassesbtn")
+const noaccessbtn = document.getElementById("noaccess")
+const reye = document.getElementById("reye")
+const leye = document.getElementById("leye")
+
+glassesbtn.addEventListener("click", () => {
+  reye.style.display = "none";
+  leye.style.display = "none";
+});
+noaccess.addEventListener("click", () => {
+  reye.style.display = "block";
+  leye.style.display = "block";
+});
 
 colorInput.addEventListener("input", function () {
   // Get the selected color value from the input element
@@ -9,6 +22,7 @@ colorInput.addEventListener("input", function () {
 });
 
 dragElement(document.getElementById("settings"));
+
 
 function dragElement(elmnt) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
