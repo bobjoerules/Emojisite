@@ -162,14 +162,16 @@ function disablemouth() {
   griningbtn.style.opacity = 0.5;
   griningbtn.style.cursor = 'default';
 }
-function enablemouthr(){
-  mouthblockerr = 0
-  enablemouth()
+
+function enableMouth(side) {
+  if (side === "r") {
+    mouthblockerr = 0;
+  }else{
+    mouthblockerl = 0;
+  }
+  enablemouth();
 }
-function enablemouthl(){
-  mouthblockerl = 0
-  enablemouth()
-}
+
 function enablemouth() {
   if ((mouthblockerr === 0) && (mouthblockerl === 0)){
     grinbtn.disabled = false;
