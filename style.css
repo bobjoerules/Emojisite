@@ -6,51 +6,6 @@ div, p {
   1px 1px 0 black;
 }
 
-.mouthbutton {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.righteyebutton {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.lefteyebutton {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.accessoriesbutton {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.highlightsbutton {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
 .settings{
   position: absolute;
   z-index: 9;
@@ -63,64 +18,52 @@ div, p {
   cursor:grabbing;
 }
 
-.glasses {
+.glasses, .accessories, .leye, .reye, .mouth, .highlights, .face {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+} 
+.glasses {
   z-index: 5;
 }
 
-
 .accessories {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 5;
 }
 
 .leye {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 3;
 }
 
 .reye {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
 .mouth {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 4;
 }
 
 .highlights {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .face {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 0;
 }
 
+#download {
+  background-color: black;
+  padding: 10px;
+}
+
 button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;  
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.1);
   color: white;

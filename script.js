@@ -186,14 +186,43 @@ function enablemouth() {
 }
 
 colorInput.addEventListener("input", function () {
-  // Get the selected color value from the input element
   const selectedColor = colorInput.value;
-
-  // Update the background color of the entire page
   document.body.style.backgroundColor = selectedColor;
 });
 
 dragElement(document.getElementById("settings"));
+
+function clearemoji() {
+  document.querySelectorAll('button').forEach(btn => {
+    if (btn.textContent.trim().toLowerCase() === 'none') {
+      btn.click();
+    }
+  });
+}
+
+function download() {
+  const canvas = document.getElementById("canvas");
+  const ctx = canvas.getContext("2d");
+  const images = [
+    document.getElementById("face"),
+    document.getElementById("mouth"),
+    document.getElementById("leye"),
+    document.getElementById("reye"),
+    document.getElementById("glasses"),
+    document.getElementById("accessories"),
+    document.getElementById("highlights")
+  ];
+
+  images.forEach(img => {
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  });
+
+  const combinedImage = canvas.toDataURL("image/png");
+  const link = document.createElement("a");
+  link.href = combinedImage;
+  link.download = "newemoji.png";
+  link.click();
+}
 
 function dragElement(elmnt) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
