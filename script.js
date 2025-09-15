@@ -13,6 +13,34 @@ const accessories = document.getElementById('accessories')
 const mouth = document.getElementById('mouth')
 let mouthblockerl = 0
 let mouthblockerr = 0
+const menu = document.getElementById('downloadmenu');
+
+function hidesettings(settings) {
+  document.getElementById('settings').style.display="none"
+  document.getElementById('credits').style.display="none"
+}
+
+function showsettings(settings) {
+  document.getElementById('settings').style.display="block"
+  document.getElementById('credits').style.display="block"
+}
+
+function showMenu(x, y) {
+  menu.style.left = x -80 + 'px';
+  menu.style.top = y -30 + 'px';
+  menu.style.display = 'block';
+}
+
+function hideMenu() {
+  menu.style.display = 'none';
+}
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  showMenu(e.pageX, e.pageY);
+});
+
+menu.addEventListener('mouseleave', hideMenu);
 
 glassesbtn.addEventListener("click", () => {
   if (glasses.src.split("/").pop() === 'Sunglasses.png'){
@@ -123,44 +151,33 @@ document.getElementById('winkl').onclick = () => {
 }
 
 function disableeyes() {
-  winkl.disabled = true;
-  winkl.style.backgroundColor = 'red';
-  winkl.style.opacity = 0.5;
-  winkl.style.cursor = 'default';
-  disr.disabled = true;
-  disr.style.backgroundColor = 'red';
-  disr.style.opacity = 0.5;
-  disr.style.cursor = 'default';
-  disl.disabled = true;
-  disl.style.backgroundColor = 'red';
-  disl.style.opacity = 0.5;
-  disl.style.cursor = 'default';
+  disablebtn(winkl)
+  disablebtn(disr)
+  disablebtn(disl)
 }
 
 function enableeyes() {
-  winkl.disabled = false;
-  winkl.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
-  winkl.style.opacity = 1;
-  winkl.style.cursor = 'pointer';
-  disr.disabled = false;
-  disr.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-  disr.style.opacity = 1;
-  disr.style.cursor = 'pointer';
-  disl.disabled = false;
-  disl.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-  disl.style.opacity = 1;
-  disl.style.cursor = 'pointer';
+  enablebtn(winkl)
+  enablebtn(disr)
+  enablebtn(disl)
 }
 
 function disablemouth() {
-  grinbtn.disabled = true;
-  grinbtn.style.backgroundColor = 'red';
-  grinbtn.style.opacity = 0.5;
-  grinbtn.style.cursor = 'default';
-  griningbtn.disabled = true;
-  griningbtn.style.backgroundColor = 'red';
-  griningbtn.style.opacity = 0.5;
-  griningbtn.style.cursor = 'default';
+  disablebtn(grinbtn)
+  disablebtn(griningbtn)
+}
+
+function disablebtn(btn) {
+  btn.disabled = true;
+  btn.style.backgroundColor = 'red';
+  btn.style.opacity = 0.5;
+  btn.style.cursor = 'default';
+}
+function enablebtn(btn) {
+  btn.disabled = false;
+  btn.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+  btn.style.opacity = 1;
+  btn.style.cursor = 'pointer';
 }
 
 function enableMouth(side) {
@@ -169,19 +186,9 @@ function enableMouth(side) {
   }else{
     mouthblockerl = 0;
   }
-  enablemouth();
-}
-
-function enablemouth() {
   if ((mouthblockerr === 0) && (mouthblockerl === 0)){
-    grinbtn.disabled = false;
-    grinbtn.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-    grinbtn.style.opacity = 1;
-    grinbtn.style.cursor = 'pointer';
-    griningbtn.disabled = false;
-    griningbtn.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-    griningbtn.style.opacity = 1;
-    griningbtn.style.cursor = 'pointer';
+    enablebtn(grinbtn)
+    enablebtn(griningbtn)
   }
 }
 

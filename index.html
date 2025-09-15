@@ -13,6 +13,16 @@
     </style>  
   </head>
   <body>
+    <div id="downloadmenu" class="downloadmenu">
+      <ul>
+        <li onclick="download()">Download Image</li>
+        <hr>
+        <li onclick="showsettings()">Show Settings</li>
+        <hr>
+        <li onclick="clearemoji()">Clear Emoji</li>
+      </ul>
+    </div>
+
     <div id="settings" class="settings">
     <div style="z-index: 100;">Mouth: 
         
@@ -116,10 +126,12 @@
       <input type="color" id="favcolor" name="favcolor" value="#005A78" style="padding: 0; border:none; cursor:pointer;">  
 
     </div>
-    <div>
-      <br>
-      <button id="download" onclick="download()">Download Emoji</button>
-      <button id="download" onclick="clearemoji()">Clear Emoji</button>
+    <div style="display: flex; justify-content: space-between; padding-top: 10px;">
+      <div>
+        <button class="download" onclick="download()">Download Emoji</button>
+        <button class="download" onclick="clearemoji()">Clear Emoji</button>
+      </div>
+      <button class="download" onclick="hidesettings()">Hide Settings</button>
     </div>
     </div>
       <!--
@@ -140,7 +152,7 @@
       <img id="face" class="face" src="images/Face Background.png" draggable = "false">
     </div>
     <canvas id="canvas" width="500" height="500" style="display: none;"></canvas>
-    <p style="position: absolute; bottom: 0; right: 10px" draggable="false"><a color="grey" href="https://github.com/bobjoerules/Emojisite">GitHub</a> · Emoji Site V2.0 © <a color="grey" href="https://bobjoerules.com">Bobjoerules</a> 2025</p>
+    <p id="credits" style="position: absolute; bottom: 0; right: 10px; color: white;" draggable="false"><a href="https://github.com/bobjoerules/Emojisite">GitHub</a> · <a href="https://bobjoerules.com">Bobjoerules</a></p>
     <script src="script.js"></script>
   </body>
 </html>

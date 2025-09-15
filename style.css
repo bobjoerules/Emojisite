@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-div, p {
+div, p, a {
   font-family: 'Dosis', sans-serif;
   color: white;
   text-shadow:
@@ -52,7 +52,7 @@ div, p {
   z-index: 0;
 }
 
-#download {
+.download {
   background-color: black;
   padding: 10px;
 }
@@ -75,4 +75,27 @@ button:hover{
 
 button:active{
   background-color: black;
+}
+
+.downloadmenu {
+  font-family:verdana;
+  color: white;
+  display: none;
+  position: absolute;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.downloadmenu ul {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.downloadmenu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  white-space: nowrap;
 }
